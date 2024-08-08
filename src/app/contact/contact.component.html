@@ -1,0 +1,29 @@
+<div class="bg-about mt-5 pt-4 d-flex flex-column text-contact justify-content-center align-items-center">
+    <div class=" mt-5 text-center">
+        <h1 class="fw-bold my-0">CONTACT SECTION</h1>
+        <div class="position-relative">
+            <i class="fa-solid fa-star  my-3"></i>
+            <div class="before position-absolute">
+
+            </div>
+            <div class="after position-absolute">
+                
+            </div>
+        </div>
+    </div>
+    <div class="mt-5 w-50 contact px-2">
+        <p [class.active]="isname" [class.deactivate]="!isname" class="my-0 position-relative txt text-success">userName:</p>
+        <input id="userName" type="text" [(ngModel)]="name" placeholder="userName" name="userName"
+            class="form-control border-0 border-bottom py-3 position-relative" (input)="onnamechange()">
+        <p [class.active]="isage" [class.deactivate]="!isage" class="my-0 position-relative txt text-success">userAge:</p>
+        <input id="userAge" type="text" [(ngModel)]="age" placeholder="userAge" name="userAge"
+            class="form-control border-0 border-bottom py-3 position-relative" (input)="onagechange()">
+        <p [class.active]="isemail" [class.deactivate]="!isemail" class="my-0 position-relative txt text-success">userEmail:</p>
+        <input id="userEmail" type="text" [(ngModel)]="email" placeholder="userEmail" name="userEmail"
+            class="form-control border-0 border-bottom py-3 position-relative" (input)="onemailchange()">
+        <p [class.active]="ispassword" [class.deactivate]="!ispassword" class="my-0 position-relative txt text-success">userPassword:</p>
+        <input id="userPassword" type="text" [(ngModel)]="password" placeholder="userPassword" name="userPassword"
+            class="form-control border-0 border-bottom py-3 position-relative" (input)="onpasswordchange()">
+        <button class="btn btn-success my-4">send Message</button>
+    </div>
+</div> 

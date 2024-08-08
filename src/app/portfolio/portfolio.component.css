@@ -1,0 +1,33 @@
+.text-contact{
+    color: #2C3E50;
+}
+.before{
+    top: 45%;
+    bottom: 45%;
+    left:24%;
+    right:56%;
+    background-color: #2C3E50;
+}
+.after{
+    top: 45%;
+    bottom: 45%;
+    left:56%;
+    right:24%;
+    background-color: #2C3E50;
+}
+i.fa-plus{
+    font-size: 5rem;
+}
+.bg-green{
+    background-color: #33BD9C;
+    opacity: 0;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+.bg-green:hover {
+    opacity: 0.9;
+}
+div.image{
+    background-color: rgba(0, 0, 255, 0.3);
+}

@@ -1,0 +1,19 @@
+.bg-start{
+    background-color: #33BD9C;
+    min-height: 100vh;
+}
+.before{
+    top: 45%;
+    bottom: 45%;
+    left:24%;
+    right:56%;
+}
+.after{
+    top: 45%;
+    bottom: 45%;
+    left:56%;
+    right:24%;
+}
+.w-60{
+    width: 64%;
+}

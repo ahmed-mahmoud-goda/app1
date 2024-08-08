@@ -1,0 +1,92 @@
+<div class="bg-about pt-5 pb-3 mt-5 d-flex flex-column justify-content-center align-items-center">
+    <div class=" text-center mt-5">
+        <h1 class="fw-bold my-0">PORTFOLIO COMPONENT</h1>
+        <div class="position-relative">
+            <i class="fa-solid fa-star my-3"></i>
+            <div class="before position-absolute">
+
+            </div>
+            <div class="after position-absolute">
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="p-2 mb-4">
+                    <div class="position-relative overflow-hidden" >
+                        <img src="./assets/images/poert1.png" alt="image1" class="w-100 imgs rounded-3">
+                        <div class="position-absolute  top-0 bottom-0 start-0 end-0 bg-green d-flex justify-content-center align-items-center" (click)="pressimg('./assets/images/poert1.png')">
+                            <i class="fa-solid fa-plus text-white"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="p-2 mb-4">
+                    <div class="position-relative overflow-hidden" >
+                        <img src="./assets/images/port2.png" alt="image2" class="w-100 imgs rounded-3">
+                        <div class="position-absolute  top-0 bottom-0 start-0 end-0 bg-green d-flex justify-content-center align-items-center" (click)="pressimg('./assets/images/port2.png')">
+                            <i class="fa-solid fa-plus text-white"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="p-2 mb-4">
+                    <div class="position-relative overflow-hidden" >
+                        <img src="./assets/images/port3.png" alt="image3" class="w-100 imgs rounded-3">
+                        <div class="position-absolute  top-0 bottom-0 start-0 end-0 bg-green d-flex justify-content-center align-items-center" (click)="pressimg('./assets/images/port3.png')">
+                            <i class="fa-solid fa-plus text-white"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="p-2">
+                    <div class="position-relative overflow-hidden" >
+                        <img src="./assets/images/poert1.png" alt="image4" class="w-100 imgs rounded-3">
+                        <div class="position-absolute  top-0 bottom-0 start-0 end-0 bg-green d-flex justify-content-center align-items-center" (click)="pressimg('./assets/images/poert1.png')">
+                            <i class="fa-solid fa-plus text-white"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="p-2">
+                    <div class="position-relative overflow-hidden" >
+                        <img src="./assets/images/port2.png" alt="image5" class="w-100 imgs rounded-3">
+                        <div class="position-absolute  top-0 bottom-0 start-0 end-0 bg-green d-flex justify-content-center align-items-center" (click)="pressimg('./assets/images/port2.png')">
+                            <i class="fa-solid fa-plus text-white"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="p-2">
+                    <div class="position-relative overflow-hidden" >
+                        <img src="./assets/images/port3.png" alt="image6" class="w-100 imgs rounded-3">
+                        <div class="position-absolute top-0 bottom-0 start-0 end-0 bg-green d-flex justify-content-center align-items-center" (click)="pressimg('./assets/images/port3.png')"> 
+                            <i class="fa-solid fa-plus text-white"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div [class.d-none]="isHidden" class="position-fixed z-3 top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center image" (click)="pressdiv()">
+    <img [src]="imgsrc" alt="selected image" class="w-50" (click)="preventclick($event)">
+</div>
